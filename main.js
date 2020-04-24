@@ -1,3 +1,7 @@
+const qs = (elem) => {
+  return document.querySelector(elem);
+}
+
 const toCsv = function (table) {
   // Query all rows
   const rows = table.querySelectorAll('tr');
@@ -40,4 +44,9 @@ exportBtn.addEventListener('click', function () {
   console.log(csv);
   // Download it
   download(csv, 'download.csv');
+});
+
+qs('#upload').addEventListener('change', (e) => {
+  let fileName = e.target.files[0].name;
+  qs('.file-input').textContent = fileName;
 });
