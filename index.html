@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table to CSV</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="row">
+  <div class="container table-csv">
+    <h1>Table to CSV Download</h1>
+    <div>
+      <table id="exportMe">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody>      
+          <tr>
+            <td>Lorem ipsum dolor</td>
+            <td>Loremipsum@gmail.com</td>
+            <td>+234808700263</td>
+          </tr>
+          <tr>
+            <td>Morbi porttitor</td>
+            <td>porttitor@gmail.com</td>
+            <td>+234809800263</td>
+          </tr>
+          <tr>
+            <td>pellentesque vitae</td>
+            <td>pellentesque@gmail.com</td>
+            <td>+234809800262</td>
+          </tr>
+          <tr>
+            <td>Mauris molestie</td>
+            <td>molestie@gmail.com</td>
+            <td>+234808700263</td>
+          </tr>
+          <tr>
+            <td>metus euismod</td>
+            <td>euismod@gmail.com</td>
+            <td>+234809800543</td>
+          </tr>
+        </tbody>
+      </table>  
+    </div>
+  </div>
+  <div class="container csv-table">
+    <div class="input">
+      <input type="file" >
+    </div>
+  </div>
+</div>
+
+<div class="button">
+  <button id="export">Download CSV</button>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
