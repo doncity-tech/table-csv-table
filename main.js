@@ -70,6 +70,8 @@ const csvToTable = (csv) => {
       if (rows.indexOf(x) === (rows.length - 1)) {
         table.appendChild(tbody);
         qs('.table').appendChild(table);
+        qs('#upload').value = "";
+        qs('.file-input').textContent = "Select file...";
       }
     });
   }
